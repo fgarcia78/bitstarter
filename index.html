@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>ShopAdvisr - smart shopping advice</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -10,8 +10,7 @@
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <style type="text/css">
       /* Large desktop */
       @media (min-width: 980px) {
@@ -43,7 +42,7 @@
 
       /* Main body and headings */
       body {
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        font-family: 'Arvo', Helvetica, Arial, sans-serif;
       }
       .heading, .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -51,7 +50,7 @@
       }
       p.lead {
         padding-top: 1.5%;
-        font-size: 24px;
+        font-size: 26px;
         line-height: 30px;
       }
       p {
@@ -114,7 +113,8 @@
 	 <div class="nav-collapse collapse">
 	   <ul class="nav">
 	     <li class="active"><a href="#">Home</a></li>
-	     <li><a href="#about">About</a></li>
+	     <li><a href="#about">About <b>ShopAdvisr</b></a></li>
+	     <li><a href="#become_agent">Become an agent!</a></li>
 	     <li><a href="#contact">Contact</a></li>
 	   </ul>
 	 </div><!--/.nav.collapse -->
@@ -127,13 +127,14 @@
       <!-- Font and paired font of .heading/.subheading and body from Google fonts -->
       <div class="row-fluid heading">
 	<div class="span12">
-	  <h1>Product name</h1>
+	  <h1>ShopAdvisr</h1>
 	</div>
       </div>
     <div class="row-fluid subheading">
       <div class="span12">
 	<!-- Special typography from Bootstrap for lead paragraph -->
-	<p class="lead">One sentence description.</p>
+	<p class="lead">
+	  Get smart and informed shopping advice. From real people.</p>
       </div>
     </div>
     <div class="row-fluid pitch">
@@ -190,38 +191,37 @@
 	<img class="img-polaroid" src="http://placehold.it/480x300">
       </div>
       <div class="span5 copy">
+	<h3>Shopping experiences</h3>
 	<p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+	  Have you ever had doubts when buying from some distant place or
+	  country? Can you trust in that small online store? Do you have
+	  any idea about how much tax you have to pay for your imported
+	  goods? Sometimes is hard to make a shopping decision!
+	</p>
+	<p>
+	  Our platform will help you with this and many more issues when
+	  purchasing! The goal of our business is to support our users to
+	  facilitate their shopping experiences and avoid any headaches.
 	</p>
       </div>
     </div>
 
     <div class="row-fluid section2">
       <div class="span5 offset1 copy copy-right">
+	<h3>How it works?</h3>
+	<P>
+	  <b>ShopAdvisr</b> is a web platform that allows its users to make
+	  requests for information about stores (physical or online) in
+	  different parts of the world. Our on-site agents will conduct an
+	  investigation on such stores and will provide a reliability
+	  report that will allow our customers to make a shopping decision.
+	</P>
 	<p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+	  If the purchase is made from a foreign country, the report will
+	  include information about the shipping methods, taxes and other
+	  issues involved.
 	</p>
-      </div>
+      </Div>
       <div class="span5 asset">
 	<img class="img-polaroid" src="http://placehold.it/480x300">
       </div>
@@ -237,12 +237,15 @@
 	    <div class="accordion-heading">
 	      <a class="accordion-toggle" data-toggle="collapse"
 		 data-parent="#accordion2" href="#collapseOne">
-		What does FAQ stand for?
+		How much will you charge for your services?
 	      </a>
 	    </div>
 	    <div id="collapseOne" class="accordion-body collapse">
 	      <div class="accordion-inner">
-		Frequently Asked Question.
+		We'll charge just a small fee for our services.
+		When you request for information, the form will calculate in
+		real time how much you could pay for our services. We'll
+		charge you just the information delivered.
 	      </div>
 	    </div>
 	  </div>
@@ -250,12 +253,30 @@
 	    <div class="accordion-heading">
 	      <a class="accordion-toggle" data-toggle="collapse"
 		 data-parent="#accordion2" href="#collapseTwo">
-		What's a Frequently Asked Question?
+		Can you make some shopping for me?
 	      </a>
 	    </div>
 	    <div id="collapseTwo" class="accordion-body collapse">
 	      <div class="accordion-inner">
-		A question which is commonly asked by users.
+		We don't make direct shopping for our customers; but if
+		you're in a hurry, we could figure out something to help
+		you.
+	      </div>
+	    </div>
+	  </div>
+	  <div class="accordion-group">
+	    <div class="accordion-heading">
+	      <a class="accordion-toggle" data-toggle="collapse"
+		 data-parent="#accordion2" href="#collapseThree">
+		Can I work with you as an adviser?
+	      </a>
+	    </div>
+	    <div id="collapseThree" class="accordion-body collapse">
+	      <div class="accordion-inner">
+		Yes! We'll be glad to have you with us! We're looking
+		for people that can help us with the advising in many
+		cities around the world! Please <a href="#">contact
+		us</a> for information about this.
 	      </div>
 	    </div>
 	  </div>
