@@ -48,6 +48,9 @@
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
       }
+      h1.heading {
+        color: #606060;
+      }
       p.lead {
         padding-top: 1.5%;
         font-size: 26px;
@@ -56,6 +59,9 @@
       p {
         font-size: 18px;
         line-height: 24px;
+      }
+      h2, h3 {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
       }
 
       /* Video pitch and action */
@@ -123,177 +129,213 @@
    </div>
 
    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
-    <div class="container">
-      <!-- Font and paired font of .heading/.subheading and body from Google fonts -->
-      <div class="row-fluid heading">
-	<div class="span12">
-	  <h1>Introducing ShopAdvisr</h1>
-	</div>
-      </div>
-    <div class="row-fluid subheading">
-      <div class="span12">
-	<!-- Special typography from Bootstrap for lead paragraph -->
-	<p class="lead">
-	  Get smart and informed shopping advice. From real people.</p>
-      </div>
-    </div>
-    <div class="row-fluid pitch">
-      <div class="span5 offset1 video">
-	<img class="img-polaroid" src="https://s3-us-west-1.amazonaws.com/huizapol-coursera/images/sale.jpg">
-      </div>
+   <div class="container">
+     <!-- Font and paired font of .heading/.subheading and body from Google fonts -->
+     <div class="row-fluid">
+       <div class="span10 offset1">
+	 <div class="hero-unit">
+	   <h1 class="heading">Introducing ShopAdvisr</h1>
+	   <p class="lead subheading">Get smart and informed shopping advice. From real people.</p>
+	 </div>
+       </div>
+     </div>
 
-      <!-- We define a new 'actions' div to contain statistics, order and share buttons. -->
-      <div class="span5 actions">
-	<div class="span8 offset2">
-	  <div class="statistics">
-	    <div class="span4">
-	      <!-- linediv-l and linediv-r give dividing lines that look
-		   different in horizontal and vertical layouts, illustrating
-		   media queries.  -->
-	      <div class="linediv-l">
-		<h3>10</h3> <p>backers</p>
-	      </div>
-	    </div>
-	    <div class="span4">
-	      <div class="linediv-c">
-		<h3>$0</h3> <p>of $15,000</p>
-	      </div>
-	    </div>
-	    <div class="span4">
-	      <div class="linediv-r">
-		<h3>45</h3> <p>days left</p>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<div class="span10 offset1">
-	  <!-- Bootstrap progress bar -->
-	  <div class="thermometer progress active">
-	    <div class="bar bar-success" style="width: 60%;"></div>
-	    <div class="bar bar-warning" style="width: 40%;"></div>
-	  </div>
-	</div>
-	<div class="span6 offset3 order">
-	  <!-- Standard Bootstrap button -->
-	  <button class="btn btn-success btn-large">Preorder</button>
-	</div>
-	<div class="span8 offset2 social">
-	  <!-- Social buttons are not included in default Bootstrap -->
-	  <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-	  <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-	</div>
-      </div>
-    </div>
+<!--     <div class="row-fluid heading">
+       <div class="span12">
+	 <h1>Introducing ShopAdvisr</h1>
+       </div>
+     </div> -->
+<!--     <div class="row-fluid subheading">
+       <div class="span12">
+	 <p class="lead">
+	   Get smart and informed shopping advice. From real people.</p>
+       </div>
+     </div> -->
 
-    <!-- Beyond this part the marketing copy begins. -->
-    <div class="row-fluid section1">
-      <div class="span5 offset1 asset">
-	<img class="img-polaroid" src="https://s3-us-west-1.amazonaws.com/huizapol-coursera/images/shopping_cart.jpg">
-      </div>
-      <div class="span5 copy">
-	<h3>Shopping experiences</h3>
-	<p>
-	  Have you ever had doubts when buying from some distant place or
-	  country? Can you trust in that small online store? Do you have
-	  any idea about how much tax you have to pay for your imported
-	  goods? Sometimes is hard to make a shopping decision!
-	</p>
-	<p>
-	  Our platform will help you with this and many more issues when
-	  purchasing! The goal of our business is to support our users to
-	  facilitate their shopping experiences and avoid any headaches.
-	</p>
-      </div>
-    </div>
+     <div class="row-fluid pitch">
+       <div class="span5 offset1 video">
+	 <img class="img-polaroid" src="https://s3-us-west-1.amazonaws.com/huizapol-coursera/images/girl_legos.jpg">
+       </div>
 
-    <div class="row-fluid section2">
-      <div class="span5 offset1 copy copy-right">
-	<h3>How it works?</h3>
-	<P>
-	  <b>ShopAdvisr</b> is a web platform that allows its users to make
-	  requests for information about stores (physical or online) in
-	  different parts of the world. Our on-site agents will conduct an
-	  investigation on such stores and will provide a reliability
-	  report that will allow our customers to make a shopping decision.
-	</P>
-	<p>
-	  If the purchase is made from a foreign country, the report will
-	  include information about the shipping methods, taxes and other
-	  issues involved.
-	</p>
-      </Div>
-      <div class="span5 asset">
-	<img class="img-polaroid" src="https://s3-us-west-1.amazonaws.com/huizapol-coursera/images/woman_shopping.jpg">
-      </div>
-    </div>
+       <!-- We define a new 'actions' div to contain statistics, order and share buttons. -->
+       <div class="span5 actions">
+	 <div class="span8 offset2">
+	   <div class="statistics">
+	     <div class="span4">
+	       <!-- linediv-l and linediv-r give dividing lines that look
+		    different in horizontal and vertical layouts, illustrating
+		    media queries.  -->
+	       <div class="linediv-l">
+		 <h3>10</h3> <p>backers</p>
+	       </div>
+	     </div>
+	     <div class="span4">
+	       <div class="linediv-c">
+		 <h3>$0</h3> <p>of $15,000</p>
+	       </div>
+	     </div>
+	     <div class="span4">
+	       <div class="linediv-r">
+		 <h3>45</h3> <p>days left</p>
+	       </div>
+	     </div>
+	   </div>
+	 </div>
+	 <div class="span10 offset1">
+	   <!-- Bootstrap progress bar -->
+	   <div class="thermometer progress progress-striped">
+	     <div class="bar bar-success" style="width: 1%;"></div>
+	     <div class="bar bar-warning" style="width: 99%;"></div>
+	   </div>
+	 </div>
+	 <div class="span6 offset3 order">
+	   <!-- Standard Bootstrap button -->
+	   <button class="btn btn-success btn-large">Join us!</button>
+	 </div>
+	 <div class="span8 offset2 social">
+	   <!-- Social buttons are not included in default Bootstrap -->
+	   <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+	   <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+	 </div>
+       </div>
+     </div>
 
-    <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-    <!-- This brings in jquery.js and bootsrap.js as dependencies. -->
-    <div class="row-fluid faq">
-      <div class="span10 offset1">
-	<h3>FAQ</h3>
-	<div class="accordion" id="accordion2">
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse"
-		 data-parent="#accordion2" href="#collapseOne">
-		How much will you charge for your services?
-	      </a>
-	    </div>
-	    <div id="collapseOne" class="accordion-body collapse">
-	      <div class="accordion-inner">
-		We'll charge just a small fee for our services.
-		When you request for information, the form will calculate in
-		real time how much you could pay for our services. We'll
-		charge you just for the information delivered.
-	      </div>
-	    </div>
-	  </div>
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse"
-		 data-parent="#accordion2" href="#collapseTwo">
-		Can you make some shopping for me?
-	      </a>
-	    </div>
-	    <div id="collapseTwo" class="accordion-body collapse">
-	      <div class="accordion-inner">
-		We don't make direct shopping for our customers; but if
-		you're in a hurry, we could figure out something to help
-		you.
-	      </div>
-	    </div>
-	  </div>
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse"
-		 data-parent="#accordion2" href="#collapseThree">
-		Can I work with you as an adviser?
-	      </a>
-	    </div>
-	    <div id="collapseThree" class="accordion-body collapse">
-	      <div class="accordion-inner">
-		Yes! We'll be glad to have you with us! We're looking
-		for people that can help us with the advising in many
-		cities around the world! Please <a href="#">contact
-		us</a> for information about this.
-	      </div>
-	    </div>
-	  </div>
-	</div>
-      </div>
-    </div>
+     <div class="row-fluid">
+       <div class="span10 offset1">
+	 <div class="subheading">
+	   <blockquote class="lead">
+	     &laquo; It's hard to trust random websites when there are
+	     no reviews about them, and you might get scammed out of your
+	     money. Always check out companies before ordering. &raquo;
+	   </blockquote>
+	 </div>
+       </div>
+     </div>
 
-    <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-    <div class="row-fluid footer">
-      <div class="span12">
-	<p>This work is licensed under
-	  the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-	    By-SA 3.0
-	  </a>, without all the cruft that would otherwise be
-	  put at the bottom of the page.</p>
-      </div>
-    </div>
-  </div>
+     <!-- Beyond this part the marketing copy begins. -->
+     <div class="row-fluid section1">
+       <div class="span5 offset1 asset">
+	 <img class="img-polaroid" src="https://s3-us-west-1.amazonaws.com/huizapol-coursera/images/shopping_cart.jpg">
+       </div>
+       <div class="span5 copy">
+	 <h2>Shopping experiences</h2>
+	 <p>
+	   Have you ever had doubts when buying from some distant place or
+	   country? Can you trust in that small online store? Do you have
+	   any idea about how much tax you have to pay for your imported
+	   goods? Sometimes is hard to make a shopping decision!
+	 </p>
+	 <p>
+	   Our platform will help you with this and many more issues when
+	   purchasing. The goal of our business is to support our users to
+	   facilitate their shopping experiences and avoid any headaches.
+	 </p>
+       </div>
+     </div>
+
+     <div class="row-fluid section2">
+       <div class="span5 offset1 copy copy-right">
+	 <h2>How it works?</h2>
+	 <P>
+	   <b>ShopAdvisr</b> is a web platform that allows its users to make
+	   requests for information about stores (physical or online) in
+	   different parts of the world. Our on-site agents will conduct an
+	   investigation on such stores and will provide a reliability
+	   report that will allow our customers to make a shopping decision.
+	 </P>
+	 <p>
+	   If the purchase is made from/to a foreign country, the report could
+	   include information about the shipping methods, taxes and other
+	   issues involved.
+	 </p>
+       </Div>
+       <div class="span5 asset">
+	 <img class="img-polaroid" src="https://s3-us-west-1.amazonaws.com/huizapol-coursera/images/woman_shopping.jpg">
+       </div>
+     </div>
+
+     <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+     <!-- This brings in jquery.js and bootsrap.js as dependencies. -->
+     <div class="row-fluid faq">
+       <div class="span10 offset1">
+	 <h3>FAQ</h3>
+	 <div class="accordion" id="accordion2">
+	   <div class="accordion-group">
+	     <div class="accordion-heading">
+	       <a class="accordion-toggle" data-toggle="collapse"
+		  data-parent="#accordion2" href="#collapseFour">
+		 What do I get if I fund your project?
+	       </a>
+	     </div>
+	     <div id="collapseFour" class="accordion-body collapse">
+	       <div class="accordion-inner">
+		 Free access to our service, based on the amount. Besides
+		 that, anyone will get a code to download our iOS app, when
+		 it's available.
+	       </div>
+	     </div>
+	   </div>
+	   <div class="accordion-group">
+	     <div class="accordion-heading">
+	       <a class="accordion-toggle" data-toggle="collapse"
+		  data-parent="#accordion2" href="#collapseOne">
+		 How much will you charge for your services?
+	       </a>
+	     </div>
+	     <div id="collapseOne" class="accordion-body collapse">
+	       <div class="accordion-inner">
+		 We'll charge just a small fee for our services.
+		 When you request for information, the form will calculate in
+		 real time how much you could pay for our services. We'll
+		 charge you just for the information delivered.
+	       </div>
+	     </div>
+	   </div>
+	   <div class="accordion-group">
+	     <div class="accordion-heading">
+	       <a class="accordion-toggle" data-toggle="collapse"
+		  data-parent="#accordion2" href="#collapseTwo">
+		 Can you make some shopping for me?
+	       </a>
+	     </div>
+	     <div id="collapseTwo" class="accordion-body collapse">
+	       <div class="accordion-inner">
+		 We don't make direct shopping for our customers; but if
+		 you're in a hurry, we could figure out something to help
+		 you.
+	       </div>
+	     </div>
+	   </div>
+	   <div class="accordion-group">
+	     <div class="accordion-heading">
+	       <a class="accordion-toggle" data-toggle="collapse"
+		  data-parent="#accordion2" href="#collapseThree">
+		 Can I work with you as a shopping adviser?
+	       </a>
+	     </div>
+	     <div id="collapseThree" class="accordion-body collapse">
+	       <div class="accordion-inner">
+		 Yes! We'll be glad to have you with us! We're looking
+		 for people that can help us with the advising in many
+		 cities around the world. Please <a href="#">contact
+		   us</a> for information about this.
+	       </div>
+	     </div>
+	   </div>
+	 </div>
+       </div>
+     </div>
+
+     <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+     <div class="row-fluid footer">
+       <div class="span12">
+	 <p>This work is licensed under
+	   the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+	     By-SA 3.0
+	   </a>, without all the cruft that would otherwise be
+	   put at the bottom of the page.</p>
+       </div>
+     </div>
+   </div>
   </body>
 </html>
